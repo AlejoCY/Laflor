@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://raw.githubusercontent.com/AlejoCY/Miflor/refs/heads/main/578b56ec-924f-48c6-a2be-9959b2ba2f10.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-direction: column; /* Asegura que el footer esté en la parte inferior */
+    min-height: 100vh; /* Asegura que el body ocupe al menos la altura de la pantalla */
+}
+
+header {
+    background-color: rgba(255, 215, 0, 0.8);
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    color: #FF6347;
+}
+
+.main-content {
+    flex: 1; /* Ocupa el espacio restante */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Alinea el contenido en columna */
+}
+
+.flower-collage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px; /* Limita el ancho del collage */
+}
+
+.flower {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 10px;
+    animation: float 5s ease-in-out infinite;
+}
+
+.flower-phrase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.phrase-img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 20px;
+    animation: float 5s ease-in-out infinite; /* Añadido para la animación */
+}
+
+footer {
+    background-color: rgba(255, 215, 0, 0.7);
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    color: #FF6347;
+    font-size: 1.2em;
+}
+
+.copyright {
+    font-size: 0.8em;
+    color: #FF6347;
+    position: absolute; /* Asegura que el copyright esté siempre en la esquina */
+    right: 20px;
+    bottom: 10px;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
